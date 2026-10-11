@@ -6,3 +6,5 @@ https://www.w3schools.com/mysql/mysql_foreignkey.asp
 https://github.com/acittadin/projeto_pesquisa_spark
 https://www.gingertechblog.com/understanding-and-setting-up-minio-a-high-performance-object-storage-solution/
 https://docs.docker.com/compose/gettingstarted
+
+https://pypi.org/project/PyMySQL/
