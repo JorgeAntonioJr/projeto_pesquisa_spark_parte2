@@ -4,3 +4,5 @@ https://datawaybr.medium.com/como-sair-do-zero-no-delta-lake-em-apenas-uma-aula-
 https://docs.docker.com/engine/containers/run/
 https://www.w3schools.com/mysql/mysql_foreignkey.asp
 https://github.com/acittadin/projeto_pesquisa_spark
+https://www.gingertechblog.com/understanding-and-setting-up-minio-a-high-performance-object-storage-solution/
+https://docs.docker.com/compose/gettingstarted
