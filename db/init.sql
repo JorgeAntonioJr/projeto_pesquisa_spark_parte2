@@ -1,6 +1,23 @@
---Create Tables
+CREATE TABLE teacher(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  goverment_code VARCHAR(30),
+  gender VARCHAR(1),
+  birth_date TIMESTAMP
+);
+
+CREATE TABLE classes (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  location VARCHAR(100),
+  teacher_id INT,
+
+  CONSTRAINT fk_teacher_id
+    FOREIGN KEY (teacher_id) REFERENCES teacher(id)
+);
+
 CREATE TABLE students (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100),
   goverment_code VARCHAR(30),
   gender VARCHAR(1),
@@ -11,26 +28,9 @@ CREATE TABLE students (
     FOREIGN KEY (class_id) REFERENCES classes(id)
 );
 
-CREATE TABLE teacher(
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
-  goverment_code VARCHAR(30),
-  gender VARCHAR(1),
-  birth_date TIMESTAMP
-);
-
-CREATE TABLE classes (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
-  location VARCHAR(100),
-  teacher_id INT,
-
-  CONSTRAINT fk_teacher_id
-    FOREIGN KEY (teacher_id) REFERENCES teacher(id)
-);
 
 CREATE TABLE subjects (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100),
   description VARCHAR(255),
   teacher_id INT,
@@ -40,9 +40,9 @@ CREATE TABLE subjects (
 );
 
 CREATE TABLE grades (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  student_id INT UNSIGNED,
-  subject_id INT UNSIGNED,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  student_id INT,
+  subject_id INT,
   grade DECIMAL(5,2),
   grade_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
@@ -52,8 +52,6 @@ CREATE TABLE grades (
   CONSTRAINT fk_grade_subject
     FOREIGN KEY (subject_id) REFERENCES subjects(id)
 );
-
---Inserts
 
 INSERT INTO teacher
   (name, goverment_code, gender, birth_date)
