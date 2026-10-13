@@ -1,0 +1,10 @@
+https://www.w3schools.com/mysql/mysql_comments.asp
+https://dev.mysql.com/doc/refman/8.4/en/example-auto-increment.html
+https://datawaybr.medium.com/como-sair-do-zero-no-delta-lake-em-apenas-uma-aula-d152688a4cc8
+https://docs.docker.com/engine/containers/run/
+https://www.w3schools.com/mysql/mysql_foreignkey.asp
+https://github.com/acittadin/projeto_pesquisa_spark
+https://www.gingertechblog.com/understanding-and-setting-up-minio-a-high-performance-object-storage-solution/
+https://docs.docker.com/compose/gettingstarted
+
+https://pypi.org/project/PyMySQL/
