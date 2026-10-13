@@ -1,0 +1,12 @@
+site_name: Trabalho 2 - Pipeline Spark, MinIO e Delta Lake
+repo_url: https://github.com/JorgeAntonioJr/projeto_pesquisa_spark_parte2
+repo_name: projeto_pesquisa_spark_parte2
+
+theme:
+  name: mkdocs
+
+nav:
+  - Início: index.md
+  - Arquitetura e Nuvem: arquitetura.md
+  - MinIO e Camadas: minio-camadas.md
+  - Tabelas Delta e DML: tabelas.md
